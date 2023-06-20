@@ -38,6 +38,20 @@ When selecting a benchmark dataset, consider the size, density, structure, and p
 * LDBC Social Network Benchmark: The Linked Data Benchmark Council (LDBC) provides a set of benchmarks specifically designed for evaluating graph database systems. The LDBC Social Network Benchmark includes a synthetic social network graph generator and a set of queries, including PageRank, to evaluate the performance of graph algorithms on social network graphs.
 * Web Data Commons Graph Benchmark: The Web Data Commons project offers a graph benchmark derived from the Common Crawl web corpus. It provides a large-scale web graph dataset that can be used to evaluate the performance of PageRank algorithms on web graphs.
 
+### Sample experiment
+
+A social network graph with 1,000,000 nodes and a sparsity degree of 10%, with data exchanges of 2KB per iteration.
+Machine is a 8 core intel i7 CPU with 16 GB RAM.
+
+    Iterative Standard Implementation:
+        Convergence Speed: an average of 50 iterations to converge.
+        Data Exchanged: each iteration involves data exchanges for all nodes, the total data exchanged per iteration would be approximately:
+        1,000,000 (number of nodes) * 2KB (data exchanges per node) = 2,000,000 KB = 2,000 MB.
+    Pregel Message Passing:
+        Convergence Speed: an average of 20 supersteps (iterations) to converge.
+        Data Exchanged: the data exchanges involve messages sent between adjacent nodes, the total data exchanged per superstep would be approximately:
+        10% * 1,000,000 (number of edges) * 2KB (data exchanges per edge) = 200,000 KB = 200 MB.
+
 
 
 
