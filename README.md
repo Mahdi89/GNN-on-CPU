@@ -28,3 +28,17 @@ Graph summarization: Creating a condensed summary of the graph by identifying im
 Apache Hadoop: This framework allows for distributed processing of large datasets using a MapReduce paradigm, which can be applied to compute PageRank.
 Apache Spark: Spark provides an efficient and fault-tolerant distributed computing framework. Its graph processing library, GraphX, can be used for PageRank computation.
 
+### Graph benchmarks 
+
+When selecting a benchmark dataset, consider the size, density, structure, and properties of the graph, as they can impact the performance and behavior of your PageRank algorithm. It's also valuable to use a combination of synthetic and real-world datasets to gain insights into the algorithm's performance in different scenarios.
+
+* Graph500: Graph500 is a benchmark that measures the performance of graph algorithms on large-scale, irregular graph problems. It provides a scalable synthetic graph generator that can produce graphs with billions of edges.
+* Stanford Large Network Dataset Collection (SNAP): SNAP provides a collection of real-world network datasets, including social networks, web graphs, collaboration networks, and more. These datasets capture the characteristics of various complex networks and can be used to evaluate the performance of PageRank algorithm on different types of graphs.
+* The SuiteSparse Matrix Collection: While primarily focused on sparse matrices, the SuiteSparse Matrix Collection also includes graph datasets. It contains a diverse set of graphs, including social networks, web graphs, and biological networks. These datasets can be used to evaluate the performance of PageRank algorithm on different graph structures.
+* LDBC Social Network Benchmark: The Linked Data Benchmark Council (LDBC) provides a set of benchmarks specifically designed for evaluating graph database systems. The LDBC Social Network Benchmark includes a synthetic social network graph generator and a set of queries, including PageRank, to evaluate the performance of graph algorithms on social network graphs.
+* Web Data Commons Graph Benchmark: The Web Data Commons project offers a graph benchmark derived from the Common Crawl web corpus. It provides a large-scale web graph dataset that can be used to evaluate the performance of PageRank algorithms on web graphs.
+
+
+
+
+
